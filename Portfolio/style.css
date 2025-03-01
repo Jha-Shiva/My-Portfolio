@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.main{
+    width: 100%;
+    background-color: black;
+}
+
+.underline.link-anime{
+    transform: scale(1.2);
+    transition:all .5s ease-in;
+} 
+
+#hero{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 40px;
+    color: white;
+    position: relative;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: cursive;
+}
+#nav .menu{
+    position: absolute;
+    right: 3%;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    display: none;
+
+}
+.menu a{
+    margin: 20px;
+}
+
+#heading{
+    color: #ffffffb4;
+    margin-top: 40px;
+}
+#heading h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: .9;
+    margin-left: 40px;
+}
+#heading #secondh1{
+    display: inline-block;
+}
+#blocktext{
+    width: fit-content;
+    margin: -2.5vw;
+}
+#blocktext h5{
+    text-align: right;
+}
+#space{
+    display: inline-block;
+    width: 14vw;
+    height: 10vw;
+}
+#third{
+    text-align: right;
+    font-size: .875rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer-text{
+    margin-top: 150px;
+    text-align: right;
+}
+#footer-text h4{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-right: 40px;
+}
+
+.herofooter{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+    position: absolute;
+    bottom: 4%;
+}
+
+
+.iconset{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    color: black;
+}
+.iconset #circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffffb4;
+}
+
+
+.underline {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+.underline:hover::after {
+    width: 100%;
+}
+
+.project-section{
+    color: #fff;
+    padding-right: 10vw;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+#elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+#elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+}
+
+
+#elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+
+#textabout {
+    width: 25rem;
+}
+
+#textabout h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#textabout a {
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#footer {
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+#footerleft {
+    display: flex;
+    gap: 20px;
+}
+
+#footerright {
+    display: flex;
+    gap: 30px;
+}
+
+#footer a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
