@@ -263,3 +263,62 @@ html,body{
     color: #fff;
     text-decoration: none;
 }
+
+
+@media (width<690px) {
+    #nav a{
+        font-size: 16px;
+    }
+    .menu a{
+        margin: 8px;
+    }
+    #footer-text h4{
+        font-size: .9rem;
+    }
+    #textabout p{
+        font-size: 12px;
+    }
+    #textabout h5{
+        font-size: 10px;
+    }
+    #about img{
+        height: 150px;
+        width: 150px;
+    }
+    #textabout a{
+        padding: 7px 15px;
+    }
+    #footer a{
+        font-size: 12px;
+    }
+    #footerleft{
+        font-size: 14px;
+    }
+}
+@media (width<580px) {
+    .menu a{
+        margin: 6px;
+    }
+    #textabout p{
+        font-size: 10px;
+    }
+    #textabout h5{
+        font-size: 8px;
+    }
+    #about img{
+        height: 100px;
+        width: 100px;
+    }
+    #footer a{
+        font-size: 10px;
+    }
+    #footerleft{
+        font-size: 12px;
+    }
+    #footerleft{
+        gap: 10px;
+    }
+    #footerright{
+        gap: 20px;
+    }
+}
